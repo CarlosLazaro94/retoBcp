@@ -1,0 +1,9 @@
+version: '3'
+services:
+  retoBcp:
+    image: reto/bcp
+    build:
+      context: ../retoBcp
+      dockerfile: ./src/main/Docker/Dockerfile
+    ports:
+      - 8080:8080
